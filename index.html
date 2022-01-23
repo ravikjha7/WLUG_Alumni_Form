@@ -1,0 +1,100 @@
+
+<html lang="en">
+
+<head>
+    <title>Alumni Form</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Walchand Linux Users' Group is a club which promotes open source technologies. WLUG established in 2003, is an active technical club. It is a group formed by open source enthusiastic students to use and promote Linux future and interesting stuff.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+     <link rel="icon" href="./images/wluglogoIcon.png" type="image/x-icon">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+     <link rel="stylesheet" href="style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+
+</head>
+
+<body>
+      <div class="container">
+        <form method = "POST" action = "Alumni_form.php">
+            <div class="centimg">
+                <img src="./images/wlug.png" alt="" style="width: 250px;">
+                <h1 class="formtitle">WLUG Alumni Form</h1>
+                <hr style="color: black; width: 100%;height: 1px;">
+                <p class="info">We are collecting the data of the Alumni Members of WLUG inorder to update the Alumni Info on the club's website</p>
+            </div>
+            <div class="row">
+                <p class="require">* fields are mandatory</p>
+                <h2>
+                    Contact Information
+                </h2>
+                <div class="input-group input-group-icon">
+                    <input type="text" name="name" placeholder="FirstName   LastName &#x2a;" required  />
+                    <div class="input-icon"><i class="fa fa-user"></i></div>
+                </div>
+                <div class="input-group input-group-icon">
+                    <input type="number" name="contact" placeholder="9112233445 &#x2a;" required />
+                    <div class="input-icon"><i class="fas fa-phone-alt"></i></div>
+                </div>
+                <div class="input-group input-group-icon">
+                    <input type="email"  name="email" placeholder="Email Address &#x2a;" required />
+                    <div class="input-icon"><i class="fa fa-envelope"></i></div>
+                </div>
+                <div class="input-group input-group-icon">
+                    <input type="number" name="passout_year"  placeholder="passout year e.g 2019 &#x2a;" required />
+                    <div class="input-icon"><i class="fas fa-graduation-cap"></i></div>
+                </div>
+                <h2>
+                    Personal Information
+                </h2>
+                <div class="input-group input-group-icon">
+                    <input type="text" name="insta"  placeholder="https://www.instagram.com/palak_shravagi"  />
+                    <div class="input-icon"><i class="fab fa-instagram"></i></div>
+                </div>
+                <div class="input-group input-group-icon">
+                    <input type="text" name="linkedin"  placeholder="https://www.linkedin.com/in/palak-shravagi-66a284194/ &#x2a;" required />
+                    <div class="input-icon"><i class="fab fa-linkedin-in"></i></div>
+                </div>
+
+
+                <div class="input-group input-group-icon">
+                    <select name="post" required class="selectt">
+             <option >Select the Post you shouldered during your Main Board &#x2a;</option>
+             <option value="President">President</option>
+             <option value="Vice President">Vice President</option>
+             <option value="Secretary">Secretary</option>
+             <option value="Program Director">Program Director</option>
+             <option value="Club Service Director">Club Service Director</option>
+             <option value="Aptitude Head">Aptitude Head</option>
+             <option value="Public Relational Officer">Public Relational Officer</option>
+             <option value="Design Head">Design Head</option>
+             <option value="Developer">Developer</option>
+             <option value="Revenue Manager">Revenue Manager</option>
+             <option value="Editor">Editor</option>
+             <option value="Technical Advisor">Technical Advisor</option>
+             <option value="Member">Member</option>
+          </select>
+                    <div class="input-icon"><i class="fas fa-id-badge"></i></div>
+                </div>
+            </div>
+
+            <div class="input-group input-group-icon">
+                <input type="file" name="pic" required>
+                <br>
+                <label>Image size should be less than 512 KB and 560 * 560 as a diamensions. (Image name should be first&lastname.)</label>
+                <div class="input-icon"><i class="far fa-image"></i></div>
+                <br>
+            </div>
+
+
+            <div class="input-group btnn">
+                <input type="submit" class="btn" name="register" value="Submit" />
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>
+
+
